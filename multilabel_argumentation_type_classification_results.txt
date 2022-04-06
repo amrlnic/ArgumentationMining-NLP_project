@@ -1,0 +1,816 @@
+MODEL: RNN
+EMBEDDING: legal_bert_sentence
+
+DATASET:
+Prec                  279
+Itpr                   95
+Princ                  64
+Rule                   61
+Prec|Rule              35
+Itpr|Prec              22
+Aut                    21
+Class|Prec|Rule         9
+Tele                    8
+Class                   7
+Class|Prec              5
+Aut|Itpr                5
+Prec|Tele               5
+Itpr|Tele               4
+Rule|Syst               3
+Itpr|Rule               3
+Prec|Syst               3
+Syst                    3
+Princ|Rule              2
+Psy|Tele                2
+Lit|Rule                2
+Lit|Prec                2
+Prec|Psy|Rule|Tele      1
+Princ|Tele              1
+Itpr|Syst               1
+Itpr|Psy                1
+Itpr|Lit                1
+Aut|Prec|Princ          1
+Princ|Psy|Syst          1
+Itpr|Princ|Syst         1
+Lit|Rule|Syst           1
+Syst|Tele               1
+Aut|Class               1
+Lit|Rule|Tele           1
+Aut|Itpr|Prec           1
+Prec|Psy                1
+Aut|Rule                1
+Aut|Syst                1
+Lit                     1
+Prec|Princ              1
+Psy|Rule                1
+Aut|Prec                1
+Class|Rule              1
+Rule|Tele               1
+Itpr|Prec|Rule          1
+Name: Argumentation_scheme, dtype: int64
+
+NUMBER OF SAMPLES: 773
+TEST_SIZE: 40.0%
+
+PARAMETERS:
+EPOCHS: 200
+BATCH_SIZE: 128
+LAYERS: [256, 128, 64]
+LR: 0.0001
+L2_FACTOR: 0.001
+DROP: 0.1
+
+RESULTS:
+              precision    recall  f1-score   support
+
+         Aut       0.75      0.33      0.46         9
+       Class       1.00      0.09      0.17        11
+        Itpr       0.24      0.32      0.27        56
+         Lit       0.00      0.00      0.00         2
+        Prec       0.81      0.80      0.81       142
+       Princ       0.44      0.23      0.30        31
+         Psy       0.00      0.00      0.00         3
+        Rule       0.62      0.42      0.50        55
+        Syst       0.00      0.00      0.00         2
+        Tele       0.00      0.00      0.00        14
+
+   micro avg       0.61      0.51      0.55       325
+   macro avg       0.39      0.22      0.25       325
+weighted avg       0.60      0.51      0.53       325
+ samples avg       0.54      0.47      0.49       325
+
+
+#######################################################
+
+MODEL: RNN
+EMBEDDING: legal_bert_sentence
+
+DATASET:
+Prec                  279
+Itpr                   95
+Princ                  64
+Rule                   61
+Prec|Rule              35
+Itpr|Prec              22
+Aut                    21
+Class|Prec|Rule         9
+Tele                    8
+Class                   7
+Class|Prec              5
+Aut|Itpr                5
+Prec|Tele               5
+Itpr|Tele               4
+Rule|Syst               3
+Itpr|Rule               3
+Prec|Syst               3
+Syst                    3
+Princ|Rule              2
+Psy|Tele                2
+Lit|Rule                2
+Lit|Prec                2
+Prec|Psy|Rule|Tele      1
+Princ|Tele              1
+Itpr|Syst               1
+Itpr|Psy                1
+Itpr|Lit                1
+Aut|Prec|Princ          1
+Princ|Psy|Syst          1
+Itpr|Princ|Syst         1
+Lit|Rule|Syst           1
+Syst|Tele               1
+Aut|Class               1
+Lit|Rule|Tele           1
+Aut|Itpr|Prec           1
+Prec|Psy                1
+Aut|Rule                1
+Aut|Syst                1
+Lit                     1
+Prec|Princ              1
+Psy|Rule                1
+Aut|Prec                1
+Class|Rule              1
+Rule|Tele               1
+Itpr|Prec|Rule          1
+Name: Argumentation_scheme, dtype: int64
+
+NUMBER OF SAMPLES: 773
+TEST_SIZE: 30.0%
+
+PARAMETERS:
+EPOCHS: 400
+BATCH_SIZE: 64
+LAYERS: [256, 128, 128]
+LR: 0.0001
+L2_FACTOR: 0.001
+DROP: 0.1
+
+RESULTS:
+              precision    recall  f1-score   support
+
+         Aut       0.67      0.31      0.42        13
+       Class       0.50      0.10      0.17        10
+        Itpr       0.46      0.36      0.40        45
+         Lit       0.00      0.00      0.00         1
+        Prec       0.83      0.83      0.83       114
+       Princ       0.18      0.17      0.17        18
+         Psy       0.00      0.00      0.00         1
+        Rule       0.58      0.42      0.49        45
+        Syst       0.00      0.00      0.00         3
+        Tele       0.00      0.00      0.00        12
+
+   micro avg       0.65      0.53      0.58       262
+   macro avg       0.32      0.22      0.25       262
+weighted avg       0.60      0.53      0.55       262
+ samples avg       0.59      0.50      0.53       262
+
+
+#######################################################
+
+MODEL: RNN
+EMBEDDING: legal_bert_sentence
+
+DATASET:
+Prec         279
+Itpr          95
+Princ         64
+Rule          61
+Prec|Rule     35
+Itpr|Prec     22
+Aut           21
+Name: Argumentation_scheme, dtype: int64
+
+NUMBER OF SAMPLES: 577
+TEST_SIZE: 30.0%
+
+PARAMETERS:
+EPOCHS: 400
+BATCH_SIZE: 64
+LAYERS: [256, 128, 128]
+LR: 0.0001
+L2_FACTOR: 0.001
+DROP: 0.1
+
+RESULTS:
+              precision    recall  f1-score   support
+
+         Aut       1.00      0.43      0.60         7
+       Class       0.00      0.00      0.00         0
+        Itpr       0.68      0.51      0.58        37
+         Lit       0.00      0.00      0.00         0
+        Prec       0.88      0.81      0.85       101
+       Princ       0.60      0.56      0.58        16
+         Psy       0.00      0.00      0.00         0
+        Rule       0.55      0.57      0.56        28
+        Syst       0.00      0.00      0.00         0
+        Tele       0.00      0.00      0.00         0
+
+   micro avg       0.77      0.68      0.72       189
+   macro avg       0.37      0.29      0.32       189
+weighted avg       0.77      0.68      0.72       189
+ samples avg       0.74      0.70      0.71       189
+
+
+#######################################################
+
+MODEL: RNN
+EMBEDDING: legal_bert_sentence
+
+DATASET:
+Prec     279
+Itpr      95
+Princ     64
+Rule      61
+Name: Argumentation_scheme, dtype: int64
+
+NUMBER OF SAMPLES: 499
+TEST_SIZE: 30.0%
+
+PARAMETERS:
+EPOCHS: 400
+BATCH_SIZE: 64
+LAYERS: [256, 128, 128]
+LR: 0.0001
+L2_FACTOR: 0.001
+DROP: 0.1
+
+RESULTS:
+              precision    recall  f1-score   support
+
+         Aut       0.00      0.00      0.00         0
+       Class       0.00      0.00      0.00         0
+        Itpr       0.48      0.50      0.49        26
+         Lit       0.00      0.00      0.00         0
+        Prec       0.83      0.89      0.86        81
+       Princ       0.39      0.29      0.33        24
+         Psy       0.00      0.00      0.00         0
+        Rule       0.79      0.58      0.67        19
+        Syst       0.00      0.00      0.00         0
+        Tele       0.00      0.00      0.00         0
+
+   micro avg       0.71      0.69      0.70       150
+   macro avg       0.25      0.23      0.23       150
+weighted avg       0.69      0.69      0.69       150
+ samples avg       0.69      0.69      0.69       150
+
+
+#######################################################
+
+MODEL: RNN
+EMBEDDING: legal_bert_sentence
+
+DATASET:
+Prec     61
+Itpr     61
+Princ    61
+Rule     61
+Name: Argumentation_scheme, dtype: int64
+
+NUMBER OF SAMPLES: 244
+TEST_SIZE: 30.0%
+
+PARAMETERS:
+EPOCHS: 400
+BATCH_SIZE: 64
+LAYERS: [256, 128, 128]
+LR: 0.0001
+L2_FACTOR: 0.001
+DROP: 0.1
+
+RESULTS:
+              precision    recall  f1-score   support
+
+         Aut       0.00      0.00      0.00         0
+       Class       0.00      0.00      0.00         0
+        Itpr       0.41      0.33      0.37        21
+         Lit       0.00      0.00      0.00         0
+        Prec       0.74      0.89      0.81        19
+       Princ       0.21      0.20      0.21        15
+         Psy       0.00      0.00      0.00         0
+        Rule       0.68      0.68      0.68        19
+        Syst       0.00      0.00      0.00         0
+        Tele       0.00      0.00      0.00         0
+
+   micro avg       0.55      0.54      0.54        74
+   macro avg       0.20      0.21      0.21        74
+weighted avg       0.53      0.54      0.53        74
+ samples avg       0.54      0.54      0.54        74
+
+
+#######################################################
+
+MODEL: RNN
+EMBEDDING: legal_bert_sentence
+
+DATASET:
+Prec                  279
+Itpr                   95
+Princ                  64
+Rule                   61
+Prec|Rule              35
+Itpr|Prec              22
+Aut                    21
+Class|Prec|Rule         9
+Tele                    8
+Class                   7
+Class|Prec              5
+Aut|Itpr                5
+Prec|Tele               5
+Itpr|Tele               4
+Rule|Syst               3
+Itpr|Rule               3
+Prec|Syst               3
+Syst                    3
+Princ|Rule              2
+Psy|Tele                2
+Lit|Rule                2
+Lit|Prec                2
+Prec|Psy|Rule|Tele      1
+Princ|Tele              1
+Itpr|Syst               1
+Itpr|Psy                1
+Itpr|Lit                1
+Aut|Prec|Princ          1
+Princ|Psy|Syst          1
+Itpr|Princ|Syst         1
+Lit|Rule|Syst           1
+Syst|Tele               1
+Aut|Class               1
+Lit|Rule|Tele           1
+Aut|Itpr|Prec           1
+Prec|Psy                1
+Aut|Rule                1
+Aut|Syst                1
+Lit                     1
+Prec|Princ              1
+Psy|Rule                1
+Aut|Prec                1
+Class|Rule              1
+Rule|Tele               1
+Itpr|Prec|Rule          1
+Name: Argumentation_scheme, dtype: int64
+
+NUMBER OF SAMPLES: 773
+TEST_SIZE: 30.0%
+
+PARAMETERS:
+EPOCHS: 250
+BATCH_SIZE: 128
+LAYERS: [128, 64, 32]
+LR: 0.0001
+L2_FACTOR: 0.001
+DROP: 0.1
+
+RESULTS:
+              precision    recall  f1-score   support
+
+         Aut       1.00      0.08      0.15        12
+       Class       0.00      0.00      0.00         7
+        Itpr       0.47      0.41      0.44        46
+         Lit       0.00      0.00      0.00         2
+        Prec       0.73      0.73      0.73       102
+       Princ       0.38      0.44      0.41        18
+         Psy       0.00      0.00      0.00         2
+        Rule       0.65      0.49      0.56        41
+        Syst       0.00      0.00      0.00         4
+        Tele       0.00      0.00      0.00        12
+
+   micro avg       0.63      0.50      0.55       246
+   macro avg       0.32      0.22      0.23       246
+weighted avg       0.58      0.50      0.52       246
+ samples avg       0.53      0.47      0.49       246
+
+
+#######################################################
+
+MODEL: RNN
+EMBEDDING: legal_bert_sentence
+
+DATASET:
+Prec                  279
+Itpr                   95
+Princ                  64
+Rule                   61
+Prec|Rule              35
+Itpr|Prec              22
+Aut                    21
+Class|Prec|Rule         9
+Tele                    8
+Class                   7
+Class|Prec              5
+Aut|Itpr                5
+Prec|Tele               5
+Itpr|Tele               4
+Rule|Syst               3
+Itpr|Rule               3
+Prec|Syst               3
+Syst                    3
+Princ|Rule              2
+Psy|Tele                2
+Lit|Rule                2
+Lit|Prec                2
+Prec|Psy|Rule|Tele      1
+Princ|Tele              1
+Itpr|Syst               1
+Itpr|Psy                1
+Itpr|Lit                1
+Aut|Prec|Princ          1
+Princ|Psy|Syst          1
+Itpr|Princ|Syst         1
+Lit|Rule|Syst           1
+Syst|Tele               1
+Aut|Class               1
+Lit|Rule|Tele           1
+Aut|Itpr|Prec           1
+Prec|Psy                1
+Aut|Rule                1
+Aut|Syst                1
+Lit                     1
+Prec|Princ              1
+Psy|Rule                1
+Aut|Prec                1
+Class|Rule              1
+Rule|Tele               1
+Itpr|Prec|Rule          1
+Name: Argumentation_scheme, dtype: int64
+
+NUMBER OF SAMPLES: 773
+TEST_SIZE: 30.0%
+
+PARAMETERS:
+EPOCHS: 250
+BATCH_SIZE: 64
+LAYERS: [128, 64, 32]
+LR: 0.0001
+L2_FACTOR: 0.001
+DROP: 0.1
+
+RESULTS:
+              precision    recall  f1-score   support
+
+         Aut       1.00      0.25      0.40         4
+       Class       0.60      0.30      0.40        10
+        Itpr       0.23      0.28      0.25        32
+         Lit       0.00      0.00      0.00         3
+        Prec       0.85      0.79      0.82       117
+       Princ       0.37      0.43      0.40        23
+         Psy       0.00      0.00      0.00         2
+        Rule       0.76      0.47      0.58        47
+        Syst       0.00      0.00      0.00         3
+        Tele       0.20      0.50      0.29         2
+
+   micro avg       0.64      0.57      0.60       243
+   macro avg       0.40      0.30      0.31       243
+weighted avg       0.66      0.57      0.60       243
+ samples avg       0.60      0.54      0.56       243
+
+
+#######################################################
+
+MODEL: RNN
+EMBEDDING: legal_bert_sentence
+
+DATASET:
+Prec         279
+Itpr          95
+Princ         64
+Rule          61
+Prec|Rule     35
+Itpr|Prec     22
+Aut           21
+Name: Argumentation_scheme, dtype: int64
+
+NUMBER OF SAMPLES: 577
+TEST_SIZE: 30.0%
+
+PARAMETERS:
+EPOCHS: 250
+BATCH_SIZE: 64
+LAYERS: [128, 64, 32]
+LR: 0.0001
+L2_FACTOR: 0.001
+DROP: 0.1
+
+RESULTS:
+              precision    recall  f1-score   support
+
+         Aut       0.50      0.17      0.25         6
+       Class       0.00      0.00      0.00         0
+        Itpr       0.59      0.60      0.60        43
+         Lit       0.00      0.00      0.00         0
+        Prec       0.91      0.77      0.83        91
+       Princ       0.71      0.31      0.43        16
+         Psy       0.00      0.00      0.00         0
+        Rule       0.90      0.60      0.72        30
+        Syst       0.00      0.00      0.00         0
+        Tele       0.00      0.00      0.00         0
+
+   micro avg       0.80      0.65      0.71       186
+   macro avg       0.36      0.25      0.28       186
+weighted avg       0.80      0.65      0.71       186
+ samples avg       0.69      0.66      0.67       186
+
+
+#######################################################
+
+MODEL: RNN
+EMBEDDING: legal_bert_sentence
+
+DATASET:
+Prec     279
+Itpr      95
+Princ     64
+Rule      61
+Name: Argumentation_scheme, dtype: int64
+
+NUMBER OF SAMPLES: 499
+TEST_SIZE: 30.0%
+
+PARAMETERS:
+EPOCHS: 250
+BATCH_SIZE: 64
+LAYERS: [128, 64, 32]
+LR: 0.0001
+L2_FACTOR: 0.001
+DROP: 0.1
+
+RESULTS:
+              precision    recall  f1-score   support
+
+         Aut       0.00      0.00      0.00         0
+       Class       0.00      0.00      0.00         0
+        Itpr       0.73      0.47      0.57        34
+         Lit       0.00      0.00      0.00         0
+        Prec       0.79      0.90      0.84        80
+       Princ       0.62      0.56      0.59        18
+         Psy       0.00      0.00      0.00         0
+        Rule       0.71      0.67      0.69        18
+        Syst       0.00      0.00      0.00         0
+        Tele       0.00      0.00      0.00         0
+
+   micro avg       0.75      0.73      0.74       150
+   macro avg       0.28      0.26      0.27       150
+weighted avg       0.75      0.73      0.73       150
+ samples avg       0.73      0.73      0.73       150
+
+
+#######################################################
+
+MODEL: RNN
+EMBEDDING: legal_bert_sentence
+
+DATASET:
+Prec     61
+Itpr     61
+Princ    61
+Rule     61
+Name: Argumentation_scheme, dtype: int64
+
+NUMBER OF SAMPLES: 244
+TEST_SIZE: 30.0%
+
+PARAMETERS:
+EPOCHS: 250
+BATCH_SIZE: 64
+LAYERS: [128, 64, 32]
+LR: 0.0001
+L2_FACTOR: 0.001
+DROP: 0.1
+
+RESULTS:
+              precision    recall  f1-score   support
+
+         Aut       0.00      0.00      0.00         0
+       Class       0.00      0.00      0.00         0
+        Itpr       0.55      0.67      0.60        18
+         Lit       0.00      0.00      0.00         0
+        Prec       0.76      0.84      0.80        19
+       Princ       0.67      0.40      0.50        20
+         Psy       0.00      0.00      0.00         0
+        Rule       0.71      0.71      0.71        17
+        Syst       0.00      0.00      0.00         0
+        Tele       0.00      0.00      0.00         0
+
+   micro avg       0.67      0.65      0.66        74
+   macro avg       0.27      0.26      0.26        74
+weighted avg       0.67      0.65      0.65        74
+ samples avg       0.65      0.65      0.65        74
+
+
+#######################################################
+
+MODEL: RNN
+EMBEDDING: legal_bert_sentence
+
+DATASET:
+Prec     61
+Itpr     61
+Princ    61
+Rule     61
+Name: Argumentation_scheme, dtype: int64
+
+NUMBER OF SAMPLES: 244
+TEST_SIZE: 30.0%
+
+PARAMETERS:
+EPOCHS: 250
+BATCH_SIZE: 64
+LAYERS: [512, 256, 128]
+LR: 0.0001
+L2_FACTOR: 0.001
+DROP: 0.1
+
+RESULTS:
+              precision    recall  f1-score   support
+
+         Aut       0.00      0.00      0.00         0
+       Class       0.00      0.00      0.00         0
+        Itpr       0.75      0.57      0.65        21
+         Lit       0.00      0.00      0.00         0
+        Prec       0.79      0.71      0.75        21
+       Princ       0.45      0.60      0.51        15
+         Psy       0.00      0.00      0.00         0
+        Rule       0.72      0.76      0.74        17
+        Syst       0.00      0.00      0.00         0
+        Tele       0.00      0.00      0.00         0
+
+   micro avg       0.67      0.66      0.67        74
+   macro avg       0.27      0.27      0.27        74
+weighted avg       0.69      0.66      0.67        74
+ samples avg       0.66      0.66      0.66        74
+
+
+#######################################################
+
+MODEL: RNN
+EMBEDDING: legal_bert_sentence
+
+DATASET:
+Prec                  279
+Itpr                   95
+Princ                  64
+Rule                   61
+Prec|Rule              35
+Itpr|Prec              22
+Aut                    21
+Class|Prec|Rule         9
+Tele                    8
+Class                   7
+Class|Prec              5
+Aut|Itpr                5
+Prec|Tele               5
+Itpr|Tele               4
+Rule|Syst               3
+Itpr|Rule               3
+Prec|Syst               3
+Syst                    3
+Princ|Rule              2
+Psy|Tele                2
+Lit|Rule                2
+Lit|Prec                2
+Prec|Psy|Rule|Tele      1
+Princ|Tele              1
+Itpr|Syst               1
+Itpr|Psy                1
+Itpr|Lit                1
+Aut|Prec|Princ          1
+Princ|Psy|Syst          1
+Itpr|Princ|Syst         1
+Lit|Rule|Syst           1
+Syst|Tele               1
+Aut|Class               1
+Lit|Rule|Tele           1
+Aut|Itpr|Prec           1
+Prec|Psy                1
+Aut|Rule                1
+Aut|Syst                1
+Lit                     1
+Prec|Princ              1
+Psy|Rule                1
+Aut|Prec                1
+Class|Rule              1
+Rule|Tele               1
+Itpr|Prec|Rule          1
+Name: Argumentation_scheme, dtype: int64
+
+NUMBER OF SAMPLES: 773
+TEST_SIZE: 30.0%
+
+PARAMETERS:
+EPOCHS: 250
+BATCH_SIZE: 64
+LAYERS: [512, 256, 128]
+LR: 0.0001
+L2_FACTOR: 0.001
+DROP: 0.1
+
+RESULTS:
+              precision    recall  f1-score   support
+
+         Aut       1.00      0.25      0.40         8
+       Class       0.00      0.00      0.00         9
+        Itpr       0.21      0.26      0.24        34
+         Lit       1.00      0.50      0.67         2
+        Prec       0.82      0.83      0.82       112
+       Princ       0.23      0.26      0.24        19
+         Psy       0.00      0.00      0.00         2
+        Rule       0.69      0.60      0.64        40
+        Syst       0.00      0.00      0.00         3
+        Tele       0.00      0.00      0.00         7
+
+   micro avg       0.61      0.57      0.59       236
+   macro avg       0.39      0.27      0.30       236
+weighted avg       0.59      0.57      0.57       236
+ samples avg       0.58      0.51      0.53       236
+
+
+#######################################################
+
+MODEL: RNN
+EMBEDDING: legal_bert_sentence
+
+DATASET:
+Prec     279
+Itpr      95
+Princ     64
+Rule      61
+Name: Argumentation_scheme, dtype: int64
+
+NUMBER OF SAMPLES: 499
+TEST_SIZE: 30.0%
+
+PARAMETERS:
+EPOCHS: 250
+BATCH_SIZE: 64
+LAYERS: [512, 256, 128]
+LR: 0.0001
+L2_FACTOR: 0.001
+DROP: 0.1
+
+RESULTS:
+              precision    recall  f1-score   support
+
+         Aut       0.00      0.00      0.00         0
+       Class       0.00      0.00      0.00         0
+        Itpr       0.48      0.65      0.55        20
+         Lit       0.00      0.00      0.00         0
+        Prec       0.92      0.88      0.90        91
+       Princ       0.44      0.40      0.42        20
+         Psy       0.00      0.00      0.00         0
+        Rule       0.69      0.58      0.63        19
+        Syst       0.00      0.00      0.00         0
+        Tele       0.00      0.00      0.00         0
+
+   micro avg       0.76      0.75      0.75       150
+   macro avg       0.25      0.25      0.25       150
+weighted avg       0.77      0.75      0.75       150
+ samples avg       0.75      0.75      0.75       150
+
+
+#######################################################
+
+MODEL: RNN
+EMBEDDING: legal_bert_sentence
+
+DATASET:
+Prec         279
+Itpr          95
+Princ         64
+Rule          61
+Prec|Rule     35
+Itpr|Prec     22
+Aut           21
+Name: Argumentation_scheme, dtype: int64
+
+NUMBER OF SAMPLES: 577
+TEST_SIZE: 30.0%
+
+PARAMETERS:
+EPOCHS: 250
+BATCH_SIZE: 64
+LAYERS: [512, 256, 128]
+LR: 0.0001
+L2_FACTOR: 0.001
+DROP: 0.1
+
+RESULTS:
+              precision    recall  f1-score   support
+
+         Aut       0.75      0.50      0.60         6
+       Class       0.00      0.00      0.00         0
+        Itpr       0.53      0.29      0.37        35
+         Lit       0.00      0.00      0.00         0
+        Prec       0.84      0.78      0.81       102
+       Princ       0.32      0.35      0.33        17
+         Psy       0.00      0.00      0.00         0
+        Rule       0.59      0.53      0.56        30
+        Syst       0.00      0.00      0.00         0
+        Tele       0.00      0.00      0.00         0
+
+   micro avg       0.70      0.61      0.65       190
+   macro avg       0.30      0.25      0.27       190
+weighted avg       0.69      0.61      0.64       190
+ samples avg       0.66      0.63      0.64       190
+
+
+#######################################################
+

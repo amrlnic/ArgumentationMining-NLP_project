@@ -1,0 +1,763 @@
+MODEL: RNN
+EMBEDDING: bert_sentence
+
+DATASET:
+prem    663
+conc    110
+Name: Name, dtype: int64
+
+NUMBER OF SAMPLES: 773
+TEST_SIZE: 30.0%
+
+PARAMETERS:
+EPOCHS: 40
+BATCH_SIZE: 64
+LAYERS: [128, 64, 32]
+LR: 0.001
+L2_FACTOR: 0.001
+DROP: 0.001
+
+RESULTS:
+              precision    recall  f1-score   support
+
+        conc       0.97      0.82      0.89        39
+        prem       0.96      0.99      0.98       193
+
+    accuracy                           0.97       232
+   macro avg       0.97      0.91      0.93       232
+weighted avg       0.97      0.97      0.96       232
+
+
+#######################################################
+
+MODEL: RNN
+EMBEDDING: bert_sentence
+
+DATASET:
+prem    663
+conc    110
+Name: Name, dtype: int64
+
+NUMBER OF SAMPLES: 773
+TEST_SIZE: 30.0%
+
+PARAMETERS:
+EPOCHS: 40
+BATCH_SIZE: 64
+LAYERS: [128, 64, 32]
+LR: 0.001
+L2_FACTOR: 0.001
+DROP: 0.1
+
+RESULTS:
+              precision    recall  f1-score   support
+
+        conc       0.93      0.81      0.86        31
+        prem       0.97      0.99      0.98       201
+
+    accuracy                           0.97       232
+   macro avg       0.95      0.90      0.92       232
+weighted avg       0.96      0.97      0.96       232
+
+
+#######################################################
+
+MODEL: RNN
+EMBEDDING: bert_sentence
+
+DATASET:
+prem    110
+conc    110
+Name: Name, dtype: int64
+
+NUMBER OF SAMPLES: 220
+TEST_SIZE: 30.0%
+
+PARAMETERS:
+EPOCHS: 40
+BATCH_SIZE: 64
+LAYERS: [128, 64, 32]
+LR: 0.001
+L2_FACTOR: 0.001
+DROP: 0.1
+
+RESULTS:
+              precision    recall  f1-score   support
+
+        conc       0.97      0.90      0.93        31
+        prem       0.92      0.97      0.94        35
+
+    accuracy                           0.94        66
+   macro avg       0.94      0.94      0.94        66
+weighted avg       0.94      0.94      0.94        66
+
+
+#######################################################
+
+MODEL: RNN
+EMBEDDING: bert_sentence
+
+DATASET:
+prem    110
+conc    110
+Name: Name, dtype: int64
+
+NUMBER OF SAMPLES: 220
+TEST_SIZE: 30.0%
+
+PARAMETERS:
+EPOCHS: 40
+BATCH_SIZE: 64
+LAYERS: [128, 64, 32]
+LR: 0.001
+L2_FACTOR: 0.001
+DROP: 0.2
+
+RESULTS:
+              precision    recall  f1-score   support
+
+        conc       0.94      1.00      0.97        30
+        prem       1.00      0.94      0.97        36
+
+    accuracy                           0.97        66
+   macro avg       0.97      0.97      0.97        66
+weighted avg       0.97      0.97      0.97        66
+
+
+#######################################################
+
+MODEL: RNN
+EMBEDDING: bert_sentence
+
+DATASET:
+prem    110
+conc    110
+Name: Name, dtype: int64
+
+NUMBER OF SAMPLES: 220
+TEST_SIZE: 30.0%
+
+PARAMETERS:
+EPOCHS: 60
+BATCH_SIZE: 32
+LAYERS: [128, 64, 32]
+LR: 0.001
+L2_FACTOR: 0.001
+DROP: 0.2
+
+RESULTS:
+              precision    recall  f1-score   support
+
+        conc       0.86      0.97      0.91        33
+        prem       0.97      0.85      0.90        33
+
+    accuracy                           0.91        66
+   macro avg       0.92      0.91      0.91        66
+weighted avg       0.92      0.91      0.91        66
+
+
+#######################################################
+
+MODEL: SVC
+EMBEDDING: bert_sentence
+
+DATASET:
+prem    110
+conc    110
+Name: Name, dtype: int64
+
+NUMBER OF SAMPLES: 220
+TEST_SIZE: 30.0%
+
+PARAMETERS:
+KERNEL: linear
+GAMMA: 0.1
+C: 0.1
+DEGREE: 2
+
+RESULTS:
+              precision    recall  f1-score   support
+
+        conc       0.84      0.97      0.90        33
+        prem       0.96      0.82      0.89        33
+
+    accuracy                           0.89        66
+   macro avg       0.90      0.89      0.89        66
+weighted avg       0.90      0.89      0.89        66
+
+
+#######################################################
+
+MODEL: SVC
+EMBEDDING: tfidf
+
+DATASET:
+prem    110
+conc    110
+Name: Name, dtype: int64
+
+NUMBER OF SAMPLES: 220
+TEST_SIZE: 30.0%
+
+PARAMETERS:
+KERNEL: linear
+GAMMA: 0.1
+C: 0.1
+DEGREE: 2
+
+RESULTS:
+              precision    recall  f1-score   support
+
+        conc       1.00      0.89      0.94        37
+        prem       0.88      1.00      0.94        29
+
+    accuracy                           0.94        66
+   macro avg       0.94      0.95      0.94        66
+weighted avg       0.95      0.94      0.94        66
+
+
+#######################################################
+
+MODEL: SVC
+EMBEDDING: tfidf
+
+DATASET:
+prem    110
+conc    110
+Name: Name, dtype: int64
+
+NUMBER OF SAMPLES: 220
+TEST_SIZE: 30.0%
+
+PARAMETERS:
+KERNEL: poly
+GAMMA: 0.1
+C: 0.1
+DEGREE: 2
+
+RESULTS:
+              precision    recall  f1-score   support
+
+        conc       0.00      0.00      0.00        34
+        prem       0.48      1.00      0.65        32
+
+    accuracy                           0.48        66
+   macro avg       0.24      0.50      0.33        66
+weighted avg       0.24      0.48      0.32        66
+
+
+#######################################################
+
+MODEL: SVC
+EMBEDDING: tfidf
+
+DATASET:
+prem    110
+conc    110
+Name: Name, dtype: int64
+
+NUMBER OF SAMPLES: 220
+TEST_SIZE: 30.0%
+
+PARAMETERS:
+KERNEL: poly
+GAMMA: 0.1
+C: 0.1
+DEGREE: 3
+
+RESULTS:
+              precision    recall  f1-score   support
+
+        conc       0.48      1.00      0.65        32
+        prem       0.00      0.00      0.00        34
+
+    accuracy                           0.48        66
+   macro avg       0.24      0.50      0.33        66
+weighted avg       0.24      0.48      0.32        66
+
+
+#######################################################
+
+MODEL: SVC
+EMBEDDING: tfidf
+
+DATASET:
+prem    110
+conc    110
+Name: Name, dtype: int64
+
+NUMBER OF SAMPLES: 220
+TEST_SIZE: 30.0%
+
+PARAMETERS:
+KERNEL: sigmoid
+GAMMA: 0.1
+C: 0.1
+DEGREE: 3
+
+RESULTS:
+              precision    recall  f1-score   support
+
+        conc       1.00      0.79      0.88        38
+        prem       0.78      1.00      0.88        28
+
+    accuracy                           0.88        66
+   macro avg       0.89      0.89      0.88        66
+weighted avg       0.91      0.88      0.88        66
+
+
+#######################################################
+
+MODEL: SVC
+EMBEDDING: tfidf
+
+DATASET:
+prem    110
+conc    110
+Name: Name, dtype: int64
+
+NUMBER OF SAMPLES: 220
+TEST_SIZE: 30.0%
+
+PARAMETERS:
+KERNEL: sigmoid
+GAMMA: 0.1
+C: 10
+DEGREE: 3
+
+RESULTS:
+              precision    recall  f1-score   support
+
+        conc       0.38      1.00      0.55        25
+        prem       0.00      0.00      0.00        41
+
+    accuracy                           0.38        66
+   macro avg       0.19      0.50      0.27        66
+weighted avg       0.14      0.38      0.21        66
+
+
+#######################################################
+
+MODEL: SVC
+EMBEDDING: tfidf
+
+DATASET:
+prem    110
+conc    110
+Name: Name, dtype: int64
+
+NUMBER OF SAMPLES: 220
+TEST_SIZE: 30.0%
+
+PARAMETERS:
+KERNEL: sigmoid
+GAMMA: 0.1
+C: 0.001
+DEGREE: 3
+
+RESULTS:
+              precision    recall  f1-score   support
+
+        conc       1.00      0.72      0.84        36
+        prem       0.75      1.00      0.86        30
+
+    accuracy                           0.85        66
+   macro avg       0.88      0.86      0.85        66
+weighted avg       0.89      0.85      0.85        66
+
+
+#######################################################
+
+MODEL: SVC
+EMBEDDING: tfidf
+
+DATASET:
+prem    663
+conc    110
+Name: Name, dtype: int64
+
+NUMBER OF SAMPLES: 773
+TEST_SIZE: 30.0%
+
+PARAMETERS:
+KERNEL: sigmoid
+GAMMA: 0.01
+C: 0.001
+DEGREE: 3
+
+RESULTS:
+              precision    recall  f1-score   support
+
+        conc       0.00      0.00      0.00        30
+        prem       0.87      1.00      0.93       202
+
+    accuracy                           0.87       232
+   macro avg       0.44      0.50      0.47       232
+weighted avg       0.76      0.87      0.81       232
+
+
+#######################################################
+
+MODEL: SVC
+EMBEDDING: legal_bert_sentence
+
+DATASET:
+prem    663
+conc    110
+Name: Name, dtype: int64
+
+NUMBER OF SAMPLES: 773
+TEST_SIZE: 30.0%
+
+PARAMETERS:
+KERNEL: sigmoid
+GAMMA: 0.01
+C: 0.001
+DEGREE: 3
+
+RESULTS:
+              precision    recall  f1-score   support
+
+        conc       1.00      0.89      0.94        35
+        prem       0.98      1.00      0.99       197
+
+    accuracy                           0.98       232
+   macro avg       0.99      0.94      0.96       232
+weighted avg       0.98      0.98      0.98       232
+
+
+#######################################################
+
+MODEL: RNN
+EMBEDDING: legal_bert_sentence
+
+DATASET:
+prem    663
+conc    110
+Name: Name, dtype: int64
+
+NUMBER OF SAMPLES: 773
+TEST_SIZE: 30.0%
+
+PARAMETERS:
+EPOCHS: 60
+BATCH_SIZE: 32
+LAYERS: [128, 64, 32]
+LR: 0.001
+L2_FACTOR: 0.001
+DROP: 0.2
+
+RESULTS:
+              precision    recall  f1-score   support
+
+        conc       0.97      0.84      0.90        38
+        prem       0.97      0.99      0.98       194
+
+    accuracy                           0.97       232
+   macro avg       0.97      0.92      0.94       232
+weighted avg       0.97      0.97      0.97       232
+
+
+#######################################################
+
+
+MODEL: BERT
+EMBEDDING: legal_bert_sentence
+
+DATASET:
+prem    663
+conc    110
+Name: Name, dtype: int64
+
+NUMBER OF SAMPLES: 773
+TEST_SIZE: 30.0%
+
+PARAMETERS:
+EPOCHS: 50
+BATCH_SIZE: 64
+LR: 0.0001
+DROP: 0.2
+
+RESULTS:
+              precision    recall  f1-score   support
+
+        conc       0.17      0.94      0.28        32
+        prem       0.96      0.25      0.40       200
+
+    accuracy                           0.34       232
+   macro avg       0.56      0.59      0.34       232
+weighted avg       0.85      0.34      0.38       232
+
+
+#######################################################
+
+MODEL: BERT
+EMBEDDING: legal_bert_sentence
+
+DATASET:
+prem    663
+conc    110
+Name: Name, dtype: int64
+
+NUMBER OF SAMPLES: 773
+TEST_SIZE: 30.0%
+
+PARAMETERS:
+EPOCHS: 50
+BATCH_SIZE: 64
+LR: 1e-06
+DROP: 0.2
+
+RESULTS:
+              precision    recall  f1-score   support
+
+        conc       0.33      0.03      0.06        29
+        prem       0.88      0.99      0.93       203
+
+    accuracy                           0.87       232
+   macro avg       0.61      0.51      0.50       232
+weighted avg       0.81      0.87      0.82       232
+
+
+#######################################################
+
+MODEL: BERT
+EMBEDDING: legal_bert_sentence
+
+DATASET:
+prem    110
+conc    110
+Name: Name, dtype: int64
+
+NUMBER OF SAMPLES: 220
+TEST_SIZE: 30.0%
+
+PARAMETERS:
+EPOCHS: 50
+BATCH_SIZE: 64
+LR: 1e-06
+DROP: 0.2
+
+RESULTS:
+              precision    recall  f1-score   support
+
+        conc       0.05      0.03      0.04        35
+        prem       0.26      0.39      0.31        31
+
+    accuracy                           0.20        66
+   macro avg       0.16      0.21      0.17        66
+weighted avg       0.15      0.20      0.17        66
+
+
+#######################################################
+
+MODEL: BERT
+EMBEDDING: legal_bert_sentence
+
+DATASET:
+prem    110
+conc    110
+Name: Name, dtype: int64
+
+NUMBER OF SAMPLES: 220
+TEST_SIZE: 30.0%
+
+PARAMETERS:
+EPOCHS: 100
+BATCH_SIZE: 32
+LR: 1e-06
+DROP: 0.2
+
+RESULTS:
+              precision    recall  f1-score   support
+
+        conc       0.70      0.48      0.57        29
+        prem       0.67      0.84      0.75        37
+
+    accuracy                           0.68        66
+   macro avg       0.69      0.66      0.66        66
+weighted avg       0.69      0.68      0.67        66
+
+
+#######################################################
+
+MODEL: BERT
+EMBEDDING: legal_bert_sentence
+
+DATASET:
+prem    110
+conc    110
+Name: Name, dtype: int64
+
+NUMBER OF SAMPLES: 220
+TEST_SIZE: 30.0%
+
+PARAMETERS:
+EPOCHS: 100
+BATCH_SIZE: 64
+LR: 1e-06
+DROP: 0.2
+
+RESULTS:
+              precision    recall  f1-score   support
+
+        conc       0.68      0.87      0.76        30
+        prem       0.86      0.67      0.75        36
+
+    accuracy                           0.76        66
+   macro avg       0.77      0.77      0.76        66
+weighted avg       0.78      0.76      0.76        66
+
+
+#######################################################
+
+MODEL: BERT
+EMBEDDING: legal_bert_sentence
+
+DATASET:
+prem    110
+conc    110
+Name: Name, dtype: int64
+
+NUMBER OF SAMPLES: 220
+TEST_SIZE: 30.0%
+
+PARAMETERS:
+EPOCHS: 100
+BATCH_SIZE: 50
+LR: 5e-06
+DROP: 0.3
+
+RESULTS:
+              precision    recall  f1-score   support
+
+        conc       0.07      0.03      0.04        32
+        prem       0.40      0.62      0.49        34
+
+    accuracy                           0.33        66
+   macro avg       0.24      0.32      0.27        66
+weighted avg       0.24      0.33      0.27        66
+
+
+#######################################################
+
+MODEL: BERT
+EMBEDDING: legal_bert_sentence
+
+DATASET:
+prem    110
+conc    110
+Name: Name, dtype: int64
+
+NUMBER OF SAMPLES: 220
+TEST_SIZE: 30.0%
+
+PARAMETERS:
+EPOCHS: 100
+BATCH_SIZE: 128
+LR: 1e-07
+DROP: 0.3
+
+RESULTS:
+              precision    recall  f1-score   support
+
+        conc       0.60      0.20      0.30        30
+        prem       0.57      0.89      0.70        36
+
+    accuracy                           0.58        66
+   macro avg       0.59      0.54      0.50        66
+weighted avg       0.58      0.58      0.52        66
+
+
+#######################################################
+
+MODEL: BERT
+EMBEDDING: legal_bert_sentence
+
+DATASET:
+prem    663
+conc    110
+Name: Name, dtype: int64
+
+NUMBER OF SAMPLES: 773
+TEST_SIZE: 30.0%
+
+PARAMETERS:
+EPOCHS: 100
+BATCH_SIZE: 64
+LR: 1e-07
+DROP: 0.3
+
+RESULTS:
+              precision    recall  f1-score   support
+
+        conc       0.00      0.00      0.00        37
+        prem       0.82      0.88      0.85       195
+
+    accuracy                           0.74       232
+   macro avg       0.41      0.44      0.42       232
+weighted avg       0.69      0.74      0.71       232
+
+
+#######################################################
+
+MODEL: BERT
+EMBEDDING: legal_bert_sentence
+
+DATASET:
+prem    663
+conc    110
+Name: Name, dtype: int64
+
+NUMBER OF SAMPLES: 773
+TEST_SIZE: 30.0%
+
+PARAMETERS:
+EPOCHS: 100
+BATCH_SIZE: 64
+LR: 1e-07
+DROP: 0.3
+
+RESULTS:
+              precision    recall  f1-score   support
+
+        conc       0.27      0.94      0.41        36
+        prem       0.98      0.52      0.68       196
+
+    accuracy                           0.59       232
+   macro avg       0.62      0.73      0.55       232
+weighted avg       0.87      0.59      0.64       232
+
+
+#######################################################
+
+MODEL: SVC
+EMBEDDING: legal_bert_sentence
+
+DATASET:
+prem    663
+conc    110
+Name: Name, dtype: int64
+
+NUMBER OF SAMPLES: 773
+TEST_SIZE: 30.0%
+
+PARAMETERS:
+KERNEL: sigmoid
+GAMMA: 0.01
+C: 0.001
+DEGREE: 3
+
+RESULTS:
+              precision    recall  f1-score   support
+
+        conc       1.00      0.94      0.97        36
+        prem       0.99      1.00      0.99       196
+
+    accuracy                           0.99       232
+   macro avg       0.99      0.97      0.98       232
+weighted avg       0.99      0.99      0.99       232
+
+
+#######################################################
+

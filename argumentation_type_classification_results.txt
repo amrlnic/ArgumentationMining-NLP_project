@@ -1,0 +1,812 @@
+MODEL: SVC
+EMBEDDING: bert_sentence
+
+DATASET:
+Prec     279
+Itpr      95
+Princ     64
+Rule      61
+Name: Argumentation_scheme, dtype: int64
+
+NUMBER OF SAMPLES: 499
+TEST_SIZE: 30.0%
+
+PARAMETERS:
+KERNEL: rbf
+GAMMA: 0.01
+C: 0.001
+DEGREE: 3
+
+RESULTS:
+              precision    recall  f1-score   support
+
+        Itpr       0.71      0.30      0.43        33
+        Prec       0.65      0.98      0.78        83
+       Princ       0.64      0.37      0.47        19
+        Rule       0.00      0.00      0.00        15
+
+    accuracy                           0.65       150
+   macro avg       0.50      0.41      0.42       150
+weighted avg       0.60      0.65      0.59       150
+
+
+#######################################################
+
+MODEL: SVC
+EMBEDDING: legal_bert_sentence
+
+DATASET:
+Prec     279
+Itpr      95
+Princ     64
+Rule      61
+Name: Argumentation_scheme, dtype: int64
+
+NUMBER OF SAMPLES: 499
+TEST_SIZE: 30.0%
+
+PARAMETERS:
+KERNEL: rbf
+GAMMA: 0.01
+C: 0.001
+DEGREE: 3
+
+RESULTS:
+              precision    recall  f1-score   support
+
+        Itpr       0.55      0.57      0.56        28
+        Prec       0.89      0.86      0.88        87
+       Princ       0.21      0.31      0.25        13
+        Rule       0.78      0.64      0.70        22
+
+    accuracy                           0.73       150
+   macro avg       0.61      0.59      0.60       150
+weighted avg       0.75      0.73      0.74       150
+
+
+#######################################################
+
+MODEL: SVC
+EMBEDDING: tfidf
+
+DATASET:
+Prec     279
+Itpr      95
+Princ     64
+Rule      61
+Name: Argumentation_scheme, dtype: int64
+
+NUMBER OF SAMPLES: 499
+TEST_SIZE: 30.0%
+
+PARAMETERS:
+KERNEL: rbf
+GAMMA: 0.01
+C: 0.001
+DEGREE: 3
+
+RESULTS:
+              precision    recall  f1-score   support
+
+        Itpr       0.00      0.00      0.00        26
+        Prec       0.60      1.00      0.75        90
+       Princ       0.00      0.00      0.00        20
+        Rule       0.00      0.00      0.00        14
+
+    accuracy                           0.60       150
+   macro avg       0.15      0.25      0.19       150
+weighted avg       0.36      0.60      0.45       150
+
+
+#######################################################
+
+MODEL: SVC
+EMBEDDING: legal_bert_sentence
+
+DATASET:
+Prec     279
+Itpr      95
+Princ     64
+Rule      61
+Name: Argumentation_scheme, dtype: int64
+
+NUMBER OF SAMPLES: 499
+TEST_SIZE: 30.0%
+
+PARAMETERS:
+KERNEL: poly
+GAMMA: 0.01
+C: 0.001
+DEGREE: 3
+
+RESULTS:
+              precision    recall  f1-score   support
+
+        Itpr       0.48      0.64      0.55        33
+        Prec       0.83      0.86      0.85        74
+       Princ       0.38      0.14      0.20        22
+        Rule       0.76      0.76      0.76        21
+
+    accuracy                           0.69       150
+   macro avg       0.61      0.60      0.59       150
+weighted avg       0.68      0.69      0.67       150
+
+
+#######################################################
+
+MODEL: SVC
+EMBEDDING: legal_bert_sentence
+
+DATASET:
+Prec         279
+Itpr          95
+Princ         64
+Rule          61
+Prec|Rule     35
+Itpr|Prec     22
+Aut           21
+Name: Argumentation_scheme, dtype: int64
+
+NUMBER OF SAMPLES: 577
+TEST_SIZE: 30.0%
+
+PARAMETERS:
+KERNEL: poly
+GAMMA: 0.01
+C: 0.001
+DEGREE: 3
+
+RESULTS:
+              precision    recall  f1-score   support
+
+         Aut       1.00      0.14      0.25         7
+        Itpr       0.36      0.64      0.46        25
+   Itpr|Prec       0.00      0.00      0.00         9
+        Prec       0.76      0.88      0.81        89
+   Prec|Rule       0.50      0.08      0.14        12
+       Princ       0.64      0.37      0.47        19
+        Rule       0.77      0.77      0.77        13
+
+    accuracy                           0.65       174
+   macro avg       0.58      0.41      0.42       174
+weighted avg       0.64      0.65      0.61       174
+
+
+#######################################################
+
+MODEL: SVC
+EMBEDDING: legal_bert_sentence
+
+DATASET:
+Prec         279
+Itpr          95
+Princ         64
+Rule          61
+Prec|Rule     35
+Itpr|Prec     22
+Aut           21
+Name: Argumentation_scheme, dtype: int64
+
+NUMBER OF SAMPLES: 577
+TEST_SIZE: 30.0%
+
+PARAMETERS:
+KERNEL: linear
+GAMMA: 0.01
+C: 0.001
+DEGREE: 3
+
+RESULTS:
+              precision    recall  f1-score   support
+
+         Aut       1.00      0.80      0.89         5
+        Itpr       0.54      0.69      0.61        29
+   Itpr|Prec       0.14      0.12      0.13         8
+        Prec       0.75      0.78      0.77        82
+   Prec|Rule       0.50      0.45      0.48        11
+       Princ       0.38      0.26      0.31        19
+        Rule       0.72      0.65      0.68        20
+
+    accuracy                           0.64       174
+   macro avg       0.58      0.54      0.55       174
+weighted avg       0.64      0.64      0.64       174
+
+
+#######################################################
+
+MODEL: SVC
+EMBEDDING: legal_bert_sentence
+
+DATASET:
+Prec         279
+Itpr          95
+Princ         64
+Rule          61
+Prec|Rule     35
+Itpr|Prec     22
+Aut           21
+Name: Argumentation_scheme, dtype: int64
+
+NUMBER OF SAMPLES: 577
+TEST_SIZE: 30.0%
+
+PARAMETERS:
+KERNEL: poly
+GAMMA: 0.01
+C: 0.01
+DEGREE: 5
+
+RESULTS:
+              precision    recall  f1-score   support
+
+         Aut       1.00      0.67      0.80         3
+        Itpr       0.58      0.52      0.55        29
+   Itpr|Prec       0.00      0.00      0.00         6
+        Prec       0.66      0.89      0.76        82
+   Prec|Rule       0.33      0.15      0.21        13
+       Princ       0.62      0.38      0.47        21
+        Rule       0.71      0.60      0.65        20
+
+    accuracy                           0.64       174
+   macro avg       0.56      0.46      0.49       174
+weighted avg       0.61      0.64      0.61       174
+
+
+#######################################################
+
+MODEL: RNN
+EMBEDDING: tfidf
+
+DATASET:
+Prec         279
+Itpr          95
+Princ         64
+Rule          61
+Prec|Rule     35
+Itpr|Prec     22
+Aut           21
+Name: Argumentation_scheme, dtype: int64
+
+NUMBER OF SAMPLES: 577
+TEST_SIZE: 20.0%
+
+PARAMETERS:
+EPOCHS: 100
+BATCH_SIZE: 64
+LAYERS: [128, 64, 32]
+LR: 0.0001
+L2_FACTOR: 0.001
+DROP: 0.3
+
+RESULTS:
+              precision    recall  f1-score   support
+
+         Aut       0.00      0.00      0.00         1
+        Itpr       0.62      0.38      0.47        21
+   Itpr|Prec       0.00      0.00      0.00         3
+        Prec       0.70      0.97      0.81        61
+   Prec|Rule       0.00      0.00      0.00         6
+       Princ       0.25      0.25      0.25         8
+        Rule       0.78      0.44      0.56        16
+
+    accuracy                           0.66       116
+   macro avg       0.34      0.29      0.30       116
+weighted avg       0.61      0.66      0.61       116
+
+
+#######################################################
+
+MODEL: RNN
+EMBEDDING: bert_sentence
+
+DATASET:
+Prec         279
+Itpr          95
+Princ         64
+Rule          61
+Prec|Rule     35
+Itpr|Prec     22
+Aut           21
+Name: Argumentation_scheme, dtype: int64
+
+NUMBER OF SAMPLES: 577
+TEST_SIZE: 20.0%
+
+PARAMETERS:
+EPOCHS: 100
+BATCH_SIZE: 64
+LAYERS: [128, 64, 32]
+LR: 0.0001
+L2_FACTOR: 0.001
+DROP: 0.3
+
+RESULTS:
+              precision    recall  f1-score   support
+
+         Aut       0.50      0.11      0.18         9
+        Itpr       0.47      0.42      0.44        19
+   Itpr|Prec       0.33      0.25      0.29         4
+        Prec       0.58      0.81      0.68        47
+   Prec|Rule       0.75      0.38      0.50         8
+       Princ       0.50      0.42      0.46        19
+        Rule       0.56      0.50      0.53        10
+
+    accuracy                           0.55       116
+   macro avg       0.53      0.41      0.44       116
+weighted avg       0.55      0.55      0.53       116
+
+
+#######################################################
+
+MODEL: RNN
+EMBEDDING: bert_sentence
+
+DATASET:
+Prec         279
+Itpr          95
+Princ         64
+Rule          61
+Prec|Rule     35
+Itpr|Prec     22
+Aut           21
+Name: Argumentation_scheme, dtype: int64
+
+NUMBER OF SAMPLES: 577
+TEST_SIZE: 20.0%
+
+PARAMETERS:
+EPOCHS: 100
+BATCH_SIZE: 64
+LAYERS: [128, 64, 32]
+LR: 0.001
+L2_FACTOR: 0.0001
+DROP: 0.2
+
+RESULTS:
+              precision    recall  f1-score   support
+
+         Aut       0.00      0.00      0.00         3
+        Itpr       0.38      0.42      0.40        19
+   Itpr|Prec       0.00      0.00      0.00         7
+        Prec       0.61      0.73      0.67        52
+   Prec|Rule       0.20      0.10      0.13        10
+       Princ       0.40      0.33      0.36        12
+        Rule       0.24      0.31      0.27        13
+
+    accuracy                           0.47       116
+   macro avg       0.26      0.27      0.26       116
+weighted avg       0.42      0.47      0.44       116
+
+
+#######################################################
+
+MODEL: RNN
+EMBEDDING: bert_sentence
+
+DATASET:
+Prec     279
+Itpr      95
+Princ     64
+Rule      61
+Name: Argumentation_scheme, dtype: int64
+
+NUMBER OF SAMPLES: 499
+TEST_SIZE: 20.0%
+
+PARAMETERS:
+EPOCHS: 100
+BATCH_SIZE: 64
+LAYERS: [128, 64, 32]
+LR: 0.001
+L2_FACTOR: 0.0001
+DROP: 0.2
+
+RESULTS:
+              precision    recall  f1-score   support
+
+        Itpr       0.59      0.62      0.61        16
+        Prec       0.87      0.84      0.85        63
+       Princ       0.29      0.20      0.24        10
+        Rule       0.53      0.73      0.62        11
+
+    accuracy                           0.73       100
+   macro avg       0.57      0.60      0.58       100
+weighted avg       0.73      0.73      0.73       100
+
+
+#######################################################
+
+MODEL: RNN
+EMBEDDING: bert_sentence
+
+DATASET:
+Prec     61
+Itpr     61
+Princ    61
+Rule     61
+Name: Argumentation_scheme, dtype: int64
+
+NUMBER OF SAMPLES: 244
+TEST_SIZE: 20.0%
+
+PARAMETERS:
+EPOCHS: 100
+BATCH_SIZE: 64
+LAYERS: [128, 64, 32]
+LR: 0.001
+L2_FACTOR: 0.0001
+DROP: 0.2
+
+RESULTS:
+              precision    recall  f1-score   support
+
+        Itpr       0.60      0.50      0.55        12
+        Prec       0.73      0.80      0.76        10
+       Princ       0.50      0.45      0.48        11
+        Rule       0.78      0.88      0.82        16
+
+    accuracy                           0.67        49
+   macro avg       0.65      0.66      0.65        49
+weighted avg       0.66      0.67      0.66        49
+
+
+#######################################################
+
+MODEL: RNN
+EMBEDDING: legal_bert_sentence
+
+DATASET:
+Prec     61
+Itpr     61
+Princ    61
+Rule     61
+Name: Argumentation_scheme, dtype: int64
+
+NUMBER OF SAMPLES: 244
+TEST_SIZE: 20.0%
+
+PARAMETERS:
+EPOCHS: 100
+BATCH_SIZE: 64
+LAYERS: [128, 64, 32]
+LR: 0.001
+L2_FACTOR: 0.0001
+DROP: 0.2
+
+RESULTS:
+              precision    recall  f1-score   support
+
+        Itpr       0.53      0.64      0.58        14
+        Prec       0.67      0.67      0.67        12
+       Princ       0.62      0.42      0.50        12
+        Rule       0.67      0.73      0.70        11
+
+    accuracy                           0.61        49
+   macro avg       0.62      0.61      0.61        49
+weighted avg       0.62      0.61      0.61        49
+
+
+#######################################################
+
+MODEL: RNN
+EMBEDDING: legal_bert_sentence
+
+DATASET:
+Prec     61
+Itpr     61
+Princ    61
+Rule     61
+Name: Argumentation_scheme, dtype: int64
+
+NUMBER OF SAMPLES: 244
+TEST_SIZE: 20.0%
+
+PARAMETERS:
+EPOCHS: 100
+BATCH_SIZE: 64
+LAYERS: [256, 128, 64]
+LR: 0.001
+L2_FACTOR: 0.0001
+DROP: 0.2
+
+RESULTS:
+              precision    recall  f1-score   support
+
+        Itpr       0.44      0.70      0.54        10
+        Prec       0.80      0.86      0.83        14
+       Princ       0.71      0.36      0.48        14
+        Rule       0.91      0.91      0.91        11
+
+    accuracy                           0.69        49
+   macro avg       0.72      0.71      0.69        49
+weighted avg       0.73      0.69      0.69        49
+
+
+#######################################################
+
+MODEL: RNN
+EMBEDDING: legal_bert_sentence
+
+DATASET:
+Prec     61
+Itpr     61
+Princ    61
+Rule     61
+Name: Argumentation_scheme, dtype: int64
+
+NUMBER OF SAMPLES: 244
+TEST_SIZE: 20.0%
+
+PARAMETERS:
+EPOCHS: 100
+BATCH_SIZE: 64
+LAYERS: [256, 128, 64]
+LR: 0.0001
+L2_FACTOR: 0.0001
+DROP: 0.3
+
+RESULTS:
+              precision    recall  f1-score   support
+
+        Itpr       0.33      0.09      0.14        11
+        Prec       0.67      0.67      0.67         9
+       Princ       0.48      0.67      0.56        15
+        Rule       0.75      0.86      0.80        14
+
+    accuracy                           0.59        49
+   macro avg       0.56      0.57      0.54        49
+weighted avg       0.56      0.59      0.55        49
+
+
+#######################################################
+
+MODEL: RNN
+EMBEDDING: legal_bert_sentence
+
+DATASET:
+Prec     61
+Itpr     61
+Princ    61
+Rule     61
+Name: Argumentation_scheme, dtype: int64
+
+NUMBER OF SAMPLES: 244
+TEST_SIZE: 15.0%
+
+PARAMETERS:
+EPOCHS: 100
+BATCH_SIZE: 64
+LAYERS: [256, 128, 64]
+LR: 0.0001
+L2_FACTOR: 0.001
+DROP: 0.3
+
+RESULTS:
+              precision    recall  f1-score   support
+
+        Itpr       0.78      0.54      0.64        13
+        Prec       0.91      1.00      0.95        10
+       Princ       0.44      0.67      0.53         6
+        Rule       0.75      0.75      0.75         8
+
+    accuracy                           0.73        37
+   macro avg       0.72      0.74      0.72        37
+weighted avg       0.75      0.73      0.73        37
+
+
+#######################################################
+
+MODEL: BERT
+EMBEDDING: legal_bert_sentence
+
+DATASET:
+Prec     61
+Itpr     61
+Princ    61
+Rule     61
+Name: Argumentation_scheme, dtype: int64
+
+NUMBER OF SAMPLES: 244
+TEST_SIZE: 15.0%
+
+PARAMETERS:
+EPOCHS: 100
+BATCH_SIZE: 64
+LR: 0.0001
+DROP: 0.3
+
+RESULTS:
+              precision    recall  f1-score   support
+
+        Itpr       0.67      0.50      0.57        12
+        Prec       0.83      0.45      0.59        11
+       Princ       0.45      0.71      0.56         7
+        Rule       0.45      0.71      0.56         7
+
+    accuracy                           0.57        37
+   macro avg       0.60      0.60      0.57        37
+weighted avg       0.64      0.57      0.57        37
+
+
+#######################################################
+
+MODEL: BERT
+EMBEDDING: legal_bert_sentence
+
+DATASET:
+Prec     61
+Itpr     61
+Princ    61
+Rule     61
+Name: Argumentation_scheme, dtype: int64
+
+NUMBER OF SAMPLES: 244
+TEST_SIZE: 15.0%
+
+PARAMETERS:
+EPOCHS: 140
+BATCH_SIZE: 128
+LR: 1e-06
+DROP: 0.2
+
+RESULTS:
+              precision    recall  f1-score   support
+
+        Itpr       0.00      0.00      0.00         6
+        Prec       0.35      0.90      0.50        10
+       Princ       0.00      0.00      0.00         7
+        Rule       0.40      0.29      0.33        14
+
+    accuracy                           0.35        37
+   macro avg       0.19      0.30      0.21        37
+weighted avg       0.24      0.35      0.26        37
+
+
+#######################################################
+
+MODEL: BERT
+EMBEDDING: legal_bert_sentence
+
+DATASET:
+Prec         279
+Itpr          95
+Princ         64
+Rule          61
+Prec|Rule     35
+Itpr|Prec     22
+Aut           21
+Name: Argumentation_scheme, dtype: int64
+
+NUMBER OF SAMPLES: 577
+TEST_SIZE: 15.0%
+
+PARAMETERS:
+EPOCHS: 140
+BATCH_SIZE: 128
+LR: 1e-06
+DROP: 0.2
+
+RESULTS:
+              precision    recall  f1-score   support
+
+         Aut       0.00      0.00      0.00         2
+        Itpr       0.00      0.00      0.00        19
+   Itpr|Prec       0.03      0.33      0.05         3
+        Prec       0.00      0.00      0.00        45
+   Prec|Rule       0.03      0.50      0.05         2
+       Princ       0.00      0.00      0.00        10
+        Rule       0.25      0.17      0.20         6
+
+    accuracy                           0.03        87
+   macro avg       0.04      0.14      0.04        87
+weighted avg       0.02      0.03      0.02        87
+
+
+#######################################################
+
+MODEL: BERT
+EMBEDDING: legal_bert_sentence
+
+DATASET:
+Prec     279
+Itpr      95
+Princ     64
+Rule      61
+Name: Argumentation_scheme, dtype: int64
+
+NUMBER OF SAMPLES: 499
+TEST_SIZE: 15.0%
+
+PARAMETERS:
+EPOCHS: 200
+BATCH_SIZE: 64
+LR: 1e-06
+DROP: 0.2
+
+RESULTS:
+              precision    recall  f1-score   support
+
+        Itpr       0.18      0.50      0.26        16
+        Prec       0.67      0.14      0.24        42
+       Princ       0.22      0.50      0.31         8
+        Rule       0.00      0.00      0.00         9
+
+    accuracy                           0.24        75
+   macro avg       0.27      0.29      0.20        75
+weighted avg       0.43      0.24      0.22        75
+
+
+#######################################################
+
+MODEL: RNN
+EMBEDDING: legal_bert_sentence
+
+DATASET:
+Prec     279
+Itpr      95
+Princ     64
+Rule      61
+Name: Argumentation_scheme, dtype: int64
+
+NUMBER OF SAMPLES: 499
+TEST_SIZE: 15.0%
+
+PARAMETERS:
+EPOCHS: 140
+BATCH_SIZE: 64
+LAYERS: [256, 128, 64]
+LR: 1e-06
+L2_FACTOR: 0.001
+DROP: 0.2
+
+RESULTS:
+              precision    recall  f1-score   support
+
+        Itpr       0.43      0.53      0.47        17
+        Prec       0.78      0.70      0.74        44
+       Princ       0.00      0.00      0.00         4
+        Rule       0.20      0.10      0.13        10
+
+    accuracy                           0.55        75
+   macro avg       0.35      0.33      0.34        75
+weighted avg       0.58      0.55      0.56        75
+
+
+#######################################################
+
+MODEL: RNN
+EMBEDDING: legal_bert_sentence
+
+DATASET:
+Prec     279
+Itpr      95
+Princ     64
+Rule      61
+Name: Argumentation_scheme, dtype: int64
+
+NUMBER OF SAMPLES: 499
+TEST_SIZE: 15.0%
+
+PARAMETERS:
+EPOCHS: 140
+BATCH_SIZE: 64
+LAYERS: [256, 128, 64]
+LR: 0.001
+L2_FACTOR: 0.001
+DROP: 0.3
+
+RESULTS:
+              precision    recall  f1-score   support
+
+        Itpr       0.55      0.60      0.57        10
+        Prec       0.89      0.92      0.90        51
+       Princ       0.67      0.57      0.62         7
+        Rule       0.80      0.57      0.67         7
+
+    accuracy                           0.81        75
+   macro avg       0.72      0.67      0.69        75
+weighted avg       0.81      0.81      0.81        75
+
+
+#######################################################
+
